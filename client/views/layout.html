@@ -1,14 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="piratesApp">
 <head>
   <meta charset="UTF-8">
   <title>Pirates App!</title>
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <link rel="stylesheet" href="/stylesheets/style.css">
+  <base href="/">
 </head>
 <body>
-  Here's my awesome app.
+  <nav>
+    <a href="/pirates">Pirates App!</a>
+    <a href="/pirates/new" class='btn btn-primary pull-right' id='add-pirate'>Add a Pirate!</a>
+  </nav>
+  <div ng-view class="container"></div>
   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-route.js"></script>
   <script src="/javascripts/app.js"></script>
